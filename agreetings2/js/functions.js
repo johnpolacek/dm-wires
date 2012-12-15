@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 
 /**
  * jQuery.ScrollTo - Easy element scrolling using jQuery.
