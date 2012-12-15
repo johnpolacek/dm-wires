@@ -53,7 +53,7 @@ a{outline:0!important}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display
 
     .container {background:white;}
     #main-2 {padding-top:30px;}
-    #menu {background:#111;}
+    #menu {background:#111;z-index: 10;position:relative;}
     #menu .container {padding:0;background:#111;}
     #menu .span12 {position:relative;}
     #navi  {float:right;}
