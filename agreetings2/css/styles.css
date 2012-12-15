@@ -168,8 +168,9 @@ a{outline:0!important}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display
 
  #slidedown img {padding-top:14px;}
   #slidedown p {margin-bottom:0;}
-  .excerpt p {line-height:1.3;margin-bottom: 12px;font-family:'DINComp',sans-serif;font-size:116%;margin-top:14px;}
-}
+  .topslide {right: 0;padding: 9px 20px 5px 20px;}
+
+  }
 
 
 
@@ -187,6 +188,7 @@ a{outline:0!important}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display
   h5 {font-size:13px;padding:5px;}
   #logo2 {padding-right:0;}
   .bottom-about {width:97%;margin:0 auto!important}
+    .excerpt p {font-size:116%;}
 
 }
 
