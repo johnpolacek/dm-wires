@@ -77,7 +77,7 @@ a{outline:0!important}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display
     h5 {font-size:16px;padding:10px;line-height:1.2;font-family:'DINComp-Bold',sans-serif;background:#111;color:#fff;}
     #slidedown h5 {font-size:11px;padding:7px 0 5px;line-height:1.2;font-family:'DINComp',sans-serif;background:#fff;color:#111;text-align:center;}
     #slidedown h3 {padding-top:14px;font-size:23px;padding-bottom:0;}
-     #slidedown p {margin-bottom:0;}
+    #slidedown p {line-height:1.3;font-size:108%;}
     #slidedown img {padding-top:21px;}
 
     .meta {font-size:12px;font-family:'DINComp',sans-serif;padding-top:12px;position:relative;line-height:1.4;}
@@ -164,6 +164,7 @@ a{outline:0!important}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display
    .bottom-about {line-height:1.3;}
 
  #slidedown img {padding-top:14px;}
+  #slidedown p {margin-bottom:0;}
   .excerpt p {line-height:1.3;margin-bottom: 12px;font-family:'DINComp',sans-serif;font-size:116%;margin-top:14px;}
 }
 
