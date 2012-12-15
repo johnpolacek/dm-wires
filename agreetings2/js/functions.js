@@ -66,12 +66,21 @@ $('.thumbnail').on('click', function (e) {
 });
 
 
-
 $('#aboutdraftfcb').on('click', function (e) {
-	$("#slidedown").slideToggle(250);
-	$(".slidedown").toggleClass("active");
 	e.preventDefault();
+	$("#slidedown").slideToggle(250);
+
+	$(".topslide").toggleClass("active");
 });
+
+$('.topslide').on('click', function (e) {
+	e.preventDefault();
+	$("#slidedown").slideToggle(250);
+	$(".topslide").toggleClass("active");
+
+
+});
+
 
 
 
