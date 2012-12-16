@@ -65,26 +65,35 @@ $('.thumbnail').on('click', function (e) {
     getContent('ajax.php', href);
 });
 
-
-$('.aboutus').on('click', function (e) {
+// yeesh. clean up?
+$(document).on('click', '.noactive', function (e) {
 	e.preventDefault();
-	$(this).removeClass('aboutus');
-$("#slidedown").slideToggle(250);
-	setCookie('showmsg1', 'yes', 0);
-	$(".topslide").toggleClass("active");
-
-
+	$(this).addClass('active');
+	$("#slidedown").slideToggle(250);
+	$('.active, .noactive').addClass('active');
+	$('.noactive').removeClass('noactive');
+	setCookie("topbar", $(this).hasClass("active")?"active":"noactive", 99);
+	setCookie("topbar", 'active', 99);
 });
 
 
-
-$('.topslide').on('click', function (e) {
+$(document).on('click', '.active', function (e) {
 	e.preventDefault();
+	$(this).addClass('noactive');
 	$("#slidedown").slideToggle(250);
-	setCookie('showmsg1', 'yes', 1);
-	$(".topslide").toggleClass("active");
+	$('.noactive, .active').addClass('noactive');
+	$('.active').removeClass('active');
+	setCookie("topbar", 'noactive', 99);
 
+});
 
+$(".hidebar .active").click(function(){
+	$("#slidedown").slideToggle(250);
+	$("html.hidebar").removeClass('hidebar');
+	$('.active, .noactive').addClass('active');
+	$('.noactive').removeClass('noactive');
+	setCookie("topbar", 'active', 99);
+	return false;
 });
 
 
