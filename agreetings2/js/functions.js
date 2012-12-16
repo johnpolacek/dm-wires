@@ -68,7 +68,6 @@ $('.thumbnail').on('click', function (e) {
 // yeesh. clean up?
 $(document).on('click', '.noactive', function (e) {
 	e.preventDefault();
-	$(this).addClass('active');
 	$("#slidedown").slideToggle(250);
 	$('.active, .noactive').addClass('active');
 	$('.noactive').removeClass('noactive');
@@ -79,7 +78,6 @@ $(document).on('click', '.noactive', function (e) {
 
 $(document).on('click', '.active', function (e) {
 	e.preventDefault();
-	$(this).addClass('noactive');
 	$("#slidedown").slideToggle(250);
 	$('.noactive, .active').addClass('noactive');
 	$('.active').removeClass('active');
@@ -87,17 +85,15 @@ $(document).on('click', '.active', function (e) {
 
 });
 
-$(".hidebar .active").click(function(){
-	$("#slidedown").slideToggle(250);
+$(document).on('click', '.hidebar .active', function (e) {
+	e.preventDefault();
+	$("#slidedown").slideDown(250);
 	$("html.hidebar").removeClass('hidebar');
 	$('.active, .noactive').addClass('active');
 	$('.noactive').removeClass('noactive');
 	setCookie("topbar", 'active', 99);
-	return false;
+
 });
-
-
-
 
 
 });

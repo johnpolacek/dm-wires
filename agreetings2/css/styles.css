@@ -61,6 +61,13 @@ a{outline:0!important}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display
     #navi li a {display:inline-block;padding:15px 20px;font-size:16px;margin-left:10px;color:#f1f1f1;}
 
     #logo {float:left;font-size:21px;color:#222;color:#fff;font-weight:bold;font-family:'DINComp-Bold',serif;padding:7px 0 6px;line-height:1;}
+    #logo a{display:block;}
+    .plus, .minus, .hidebar .active .minus {font-family: Arial, sans-serif;font-size: 16px;font-weight: bold;color: #555; margin-left: 5px;display:none;}
+    .minus {font-size: 14px;position:relative;top:-2px;}
+    #logo a:hover .minus, #logo a:hover .plus {color:#aaa;}
+    
+    .noactive .plus, .hidebar .active .plus {display:inline;}
+    .active .minus    {display:inline;}
     #logo a {color:#fff;text-decoration:none!important;}
     #name {width:190px;height:auto;float:right;padding-top:2px;}
     #name a {}
@@ -229,9 +236,9 @@ p{font-size:14px;}
 @media (max-width: 340px) {
 
  
-  #logo span {display:none;}
+  #logo span.raftfcb {display:none;}
   #logo  {border-right: 1px solid #fff;}
-  #logo  a {padding-right: 14px;}
+  #logo  a {padding-right: 11px;}
   #name {width: 161px;padding-top: 4px;}
 
 }
