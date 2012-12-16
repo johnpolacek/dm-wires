@@ -66,12 +66,14 @@ $('.thumbnail').on('click', function (e) {
 });
 
 
-$('#aboutdraftfcb').on('click', function (e) {
+$('.aboutus').on('click', function (e) {
 	e.preventDefault();
-
+	$(this).removeClass('aboutus');
 $("#slidedown").slideToggle(250);
-	setCookie('showmsg1', 'yes', 0);console.log('dsd');
+	setCookie('showmsg1', 'yes', 0);
 	$(".topslide").toggleClass("active");
+
+
 });
 
 
@@ -80,7 +82,6 @@ $('.topslide').on('click', function (e) {
 	e.preventDefault();
 	$("#slidedown").slideToggle(250);
 	setCookie('showmsg1', 'yes', 1);
-	console.log('dsd');
 	$(".topslide").toggleClass("active");
 
 
